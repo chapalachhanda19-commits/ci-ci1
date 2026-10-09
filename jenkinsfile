@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages{
+        stage('checkout code') {
+            steps{
+                checkout scm
+            }
+        }
+        stage('run python program') {
+            steps{
+                sh 'python ci-ci1/hello.py'
+            }
+        }
+    }
+}
