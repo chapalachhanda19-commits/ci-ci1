@@ -8,7 +8,7 @@ pipeline {
         }
         stage('run python program') {
             steps{
-                sh 'python ci-ci1/hello.py'
+                sh 'python extract.py'
             }
         }
     }
